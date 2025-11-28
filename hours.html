@@ -77,4 +77,34 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("discordLogin").href =
   "https://discord.com/api/oauth2/authorize?client_id=1443788859912753233&redirect_uri=https%3A%2F%2Fdarkgrav1ty.github.io%2Fsast%2Fhours.html&response_type=code&scope=identify";
 
-  
+
+  // Handle OAuth callback (backend returns JSON)
+async function loadHours() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const code = urlParams.get("code");
+  if (!code) return;
+
+  // Hide login, show results
+  document.getElementById("login-container").style.display = "none";
+  document.getElementById("results").style.display = "block";
+
+  const res = await fetch(`/api/getHours?code=${code}`);
+  const data = await res.json();
+
+  // Set user hours
+  document.getElementById("userHours").textContent = data.user.hours;
+
+  // Populate department totals
+  const list = document.getElementById("deptTotals");
+  data.departments.forEach(dep => {
+    const li = document.createElement("li");
+    li.textContent = `${dep.name} — ${dep.hours} hours`;
+    list.appendChild(li);
+  });
+}
+
+loadHours();
+</script>
+
+</body>
+</html>
