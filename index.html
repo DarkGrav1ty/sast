@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>San Andreas State Troopers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official-style site for the San Andreas State Troopers. Commissioner A. Storm. Blue and grey, serving the State of San Andreas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__brand">
+    <span class="site-header__badge">SAST</span>
+    <div class="site-header__text">
+      <h1>San Andreas State Troopers</h1>
+      <p>Serving and Protecting the State of San Andreas</p>
+    </div>
+  </div>
+  <nav class="site-header__nav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#command">Command</a>
+    <a href="#heroes">Heroes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#radio">Radio</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME / HERO -->
+  <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero__content">
+      <h2 id="hero-title">Blue and Grey on Every Mile</h2>
+      <p>
+        The San Andreas State Troopers patrol highways, backroads, and city routes across the state.
+        Traffic stops, pursuits, crash scenes, and statewide emergencies. When it goes bad, we go in.
+      </p>
+      <div class="hero__actions">
+        <a href="#about" class="btn btn--primary">About SAST</a>
+        <a href="#radio" class="btn btn--outline">Open SAST Radio</a>
+      </div>
+      <dl class="hero__meta">
+        <div>
+          <dt>Commissioner</dt>
+          <dd>A. Storm</dd>
+        </div>
+        <div>
+          <dt>Motto</dt>
+          <dd>Honor · Service · Duty</dd>
+        </div>
+        <div>
+          <dt>Jurisdiction</dt>
+          <dd>State of San Andreas</dd>
+        </div>
+      </dl>
+    </div>
+    <aside class="hero__panel" aria-label="Status snapshot">
+      <div class="card card--status">
+        <h3>Radio Snapshot</h3>
+        <ul>
+          <li><span>Unit 106</span><span>10-8</span></li>
+          <li><span>Air-1</span><span>In service</span></li>
+          <li><span>Traffic Units</span><span>Active</span></li>
+        </ul>
+        <p class="text--small">Edit this to match your server’s units and callsigns.</p>
+      </div>
+      <div class="card card--status card--secondary">
+        <h3>Tonight’s Focus</h3>
+        <p>Crash reduction · DUI enforcement · Street racing suppression.</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <header class="section__header">
+      <h2 id="about-title">About SAST</h2>
+      <p>Customize this text to match your server lore, rules, and patrol style.</p>
+    </header>
+
+    <div class="grid grid--two">
+      <article>
+        <h3>Who We Are</h3>
+        <p>
+          The San Andreas State Troopers are the statewide law enforcement agency focused on highway
+          safety, traffic enforcement, and critical incident response.
+        </p>
+        <p>
+          Troopers handle high-risk stops, pursuits, crash investigation, DUI enforcement, and
+          support local agencies when backup is needed.
+        </p>
+      </article>
+
+      <article>
+        <h3>Commissioner’s Message</h3>
+        <p>
+          Every traffic stop and every call reflects the badge you wear. Carry yourself with
+          discipline, respect, and courage. The people of San Andreas deserve nothing less.
+        </p>
+        <p class="signature">Commissioner A. Storm</p>
+      </article>
+    </div>
+
+    <div class="grid grid--three section__grid">
+      <article class="card">
+        <h3>Core Values</h3>
+        <ul>
+          <li>Integrity in every decision.</li>
+          <li>Service before self.</li>
+          <li>Accountability on and off duty.</li>
+          <li>Teamwork across all agencies.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Divisions</h3>
+        <ul>
+          <li>Highway Patrol</li>
+          <li>Traffic Services</li>
+          <li>Air Support</li>
+          <li>Special Response</li>
+        </ul>
+        <p class="text--small">Rename these to match your actual department divisions.</p>
+      </article>
+
+      <article class="card">
+        <h3>Server Info</h3>
+        <p>Use this space for your game/server details.</p>
+        <ul class="tags">
+          <li><span class="tag">Framework: your choice</span></li>
+          <li><span class="tag">Style: serious / semi-serious</span></li>
+          <li><span class="tag">Platform: PC / console</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- COMMAND -->
+  <section id="command" class="section section--muted" aria-labelledby="command-title">
+    <header class="section__header">
+      <h2 id="command-title">Command Staff</h2>
+      <p>Show the leadership of your department. All text here is easy to edit.</p>
+    </header>
+
+    <div class="grid grid--three section__grid">
+      <article class="card card--profile">
+        <h3>Commissioner A. Storm</h3>
+        <p class="card__subtitle">Commissioner of the San Andreas State Troopers</p>
+        <p>
+          Oversees the entire department, sets policy and expectations, and represents SAST across
+          the State of San Andreas.
+        </p>
+      </article>
+
+      <article class="card card--profile">
+        <h3>Deputy Commissioner</h3>
+        <p class="card__subtitle">Deputy Commissioner</p>
+        <p>
+          Assists the Commissioner with day to day operations. Replace this text with your own
+          leadership info.
+        </p>
+      </article>
+
+      <article class="card card--profile">
+        <h3>Chief of Patrol</h3>
+        <p class="card__subtitle">Highway Patrol Operations</p>
+        <p>
+          Manages statewide patrol units, shift coverage, and major incident response.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HEROES -->
+  <section id="heroes" class="section" aria-labelledby="heroes-title">
+    <header class="section__header">
+      <h2 id="heroes-title">Honoring Our Troopers</h2>
+      <p>Use this section to highlight the men and women who protect the State of San Andreas.</p>
+    </header>
+
+    <div class="grid grid--three section__grid">
+      <article class="card card--trooper">
+        <h3>Trooper First Class J. Doe</h3>
+        <p class="card__subtitle">Highway Patrol Division</p>
+        <p>
+          Recognized for outstanding DUI enforcement, safe pursuit tactics, and crash response on
+          high volume routes.
+        </p>
+      </article>
+
+      <article class="card card--trooper">
+        <h3>Sergeant M. Smith</h3>
+        <p class="card__subtitle">Shift Supervisor</p>
+        <p>
+          Provides field supervision and scene command during major incidents and multi-unit calls.
+        </p>
+      </article>
+
+      <article class="card card--trooper">
+        <h3>Lieutenant R. Johnson</h3>
+        <p class="card__subtitle">Special Response Unit</p>
+        <p>
+          Coordinates tactical deployments, high risk warrant service, and statewide emergency
+          response.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section section--muted" aria-labelledby="gallery-title">
+    <header class="section__header">
+      <h2 id="gallery-title">Gallery</h2>
+      <p>
+        Place your SAST images in the <code>images</code> folder and update the image list in
+        <code>script.js</code>.
+      </p>
+    </header>
+
+    <div class="gallery">
+      <button class="gallery__btn" type="button" id="galleryPrev" aria-label="Previous image">&#10094;</button>
+      <div class="gallery__frame">
+        <img id="galleryImage" src="images/sast1.jpg" alt="SAST patrol vehicle" loading="lazy">
+      </div>
+      <button class="gallery__btn" type="button" id="galleryNext" aria-label="Next image">&#10095;</button>
+    </div>
+    <p class="gallery__caption" id="galleryCaption">
+      Example caption: SAST patrol unit staged for a traffic stop.
+    </p>
+  </section>
+
+  <!-- RADIO / MUSIC -->
+  <section id="radio" class="section" aria-labelledby="radio-title">
+    <header class="section__header">
+      <h2 id="radio-title">SAST Radio and Music</h2>
+      </p>
+    </header>
+
+    <div class="grid grid--three section__grid">
+      <article class="card card--audio">
+        <h3>SAST Theme</h3>
+        <p>Main department theme.</p>
+        <audio controls>
+          <source src="songs/sast_theme.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+
+      <article class="card card--audio">
+        <h3>Patrol Radio Ambience</h3>
+        <p>Background radio chatter.</p>
+        <audio controls>
+          <source src="songs/patrol_radio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> San Andreas State Troopers · Blue and Grey.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
