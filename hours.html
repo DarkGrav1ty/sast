@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duty Hours – San Andreas State Troopers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="site-header__brand">
+    <span class="site-header__badge">SAST</span>
+    <div class="site-header__text">
+      <h1>San Andreas State Troopers</h1>
+      <p>Serving and Protecting the State of San Andreas</p>
+    </div>
+  </div>
+
+  <nav class="site-header__nav" aria-label="Main navigation">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#command">Command</a>
+    <a href="index.html#heroes">Heroes</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#radio">Radio</a>
+    <a href="hours.html">Duty Hours</a>
+  </nav>
+</header>
+
+<main>
+    <section class="section" aria-labelledby="hours-title">
+        <header class="section_header">
+            <h2 id="hours-title">Duty Hours</h2>h2>
+            <p>Login with your Discord to view your duty hours and department totals.</p>
+            </header>
+
+                <!-- LOGIN BUTTON -->
+    <div id="login-container" class="card" style="text-align:center; padding:2rem;">
+      <h3>Authenticate with Discord</h3>
+      <p>This only retrieves your username and ID. No permissions, no risks.</p>
+      <a id="discordLogin" class="btn btn--primary" href="#">
+        Login with Discord
+      </a>
+    </div>
+
+    <!--Hide Until login-->
+    <div id="results" style="display:none; margin-top:2rem;"></div>
+
+          <!--Your Hours--></div>
+      <section class="card">
+        <h3>Your Duty Hours</h3>
+        <p>You have patrolled: <b id="userHours">0</b> hours</p>
+      </section>
+
+      <!--Department Total-->
+
+    <section class="card" style="margin-top:1.5rem;">
+        <h3>Department Totals</h3>
+        <ul id="deptTotals"></ul>
+    </section>
+
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Project Midnight</p>
+</footer>
+
+<script>
+// Set year automatically
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Discord OAuth URL (How do people login)
+document.getElementById("discordLogin").href =
+  "https://discord.com/api/oauth2/authorize?client_id=1443788859912753233&redirect_uri=https%3A%2F%2Fdarkgrav1ty.github.io%2Fsast%2Fhours.html&response_type=code&scope=identify";
+
+  
